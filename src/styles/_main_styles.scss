@@ -1,0 +1,17 @@
+.dim-desktop{
+	width: 1542px;
+	height: 390px;
+}
+.card{
+	border-radius: 20px;
+}
+.dim-mobile{
+	width: 335px;
+	height: 667px;
+}
+.hover{
+	box-shadow: 0px 0px 20px #E61577;
+}
+i.star:before{
+	content: url('../assets/images/star.svg');
+}
