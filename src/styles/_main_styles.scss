@@ -1,3 +1,6 @@
+h2{
+	font-size: 26px;
+}
 .dim-desktop{
 	width: 1542px;
 	height: 390px;
@@ -25,9 +28,6 @@ i.wishlist:before{
 i.compare:before{
 	content: url('../assets/images/compare.svg');
 }
-i.stock-bar:before{
-	content: url('../assets/images/stock-bar.svg');
-}
 i.basket:before{
 	content: url('../assets/images/basket.svg');
 }
@@ -40,4 +40,117 @@ img{
 	padding: 10px, 20px, 10px, 20px;
 	color: #fff;
 	font-size: 20px;
+}
+.font-weight-bold{
+	font-weight: bold;
+}
+ul{
+	padding-left: 1rem;
+	& li > span{
+		position: relative;
+    	left: 5px;
+    	font-size: 16px;
+	}
+}
+ul li::marker {
+  content: url('../assets/images/checkmark.svg');
+}
+ul.price-description-list li:first-child > span{
+	bottom: 10px;
+}
+ul.price-description-list li:first-child{
+	margin-bottom: -10px;
+}
+ul.price-description-list li:first-child::marker {
+  content: url('../assets/images/van.svg');
+}
+.wl-wrapper{
+	margin-top: 80px;
+	i:before{
+		position: relative;
+		bottom: 0px;
+		transition: .2s ease-in-out;
+	}
+	& a{
+		color: transparent;
+		&:hover i:before{
+			bottom: 3px;
+		}
+	}
+}
+.actual-price{
+	font-size: 30px;
+    color: $red;
+    font-weight: bold;
+    display: block
+}
+.crossed-price{
+	font-weight: bold;
+    color: #BFBFBF;
+    font-size: 14px;
+    position: relative;
+    top: 15px;
+    &:before{
+    	content: url('../assets/images/line-1.svg');
+    	position: absolute;
+    }
+}
+.save-price{
+	background: #fbd0d8;
+	padding: 3px 6px 3px 6px;
+	border-radius: 4px;
+	color: $red;
+}
+span.stock-bar{
+	display: block;
+    height: 4px;
+    width: 100%;
+    background: #cfcfcf;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    position: relative;
+    &:after{
+    	content: '';
+    	height: 4px;
+    	width: 15%;
+    	position: absolute;
+    	background: $red;
+    	border-radius: 4px;
+    }
+}
+ul.price-description-list{
+	max-width: 230px;
+	& > li > span{
+		font-size: 14px;
+	    line-height: 26px;
+	}
+} 
+.btn-buy{
+	padding: 10px 35px;
+    width: 100%;
+	& i {
+		position: relative;
+    	right: 40px;
+	}
+	span{
+		line-height: 27px;
+    	font-weight: bold;
+	}
+	&:hover{
+		color: #c7c7c7;
+	}
+}
+.text-red{
+	color: $red;
+}
+.badge-black{
+	position: absolute;
+    background: #000;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 0 0 5px 5px;
+    top: -1px;
 }
