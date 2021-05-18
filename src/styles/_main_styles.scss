@@ -78,9 +78,11 @@ ul.price-description-list li:first-child::marker {
 		}
 	}
 }
+.hover .actual-price{
+	color: $red;
+}
 .actual-price{
 	font-size: 30px;
-    color: $red;
     font-weight: bold;
     display: block
 }
@@ -113,11 +115,17 @@ span.stock-bar{
     &:after{
     	content: '';
     	height: 4px;
-    	width: 15%;
     	position: absolute;
-    	background: $red;
     	border-radius: 4px;
+    	width: 100%;
+    	background: #27ae60;
     }
+}
+.hover span.stock-bar{
+	&:after{
+		width: 15%;
+    	background: $red;
+	}
 }
 ul.price-description-list{
 	max-width: 230px;
@@ -153,4 +161,7 @@ ul.price-description-list{
     font-weight: bold;
     border-radius: 0 0 5px 5px;
     top: -1px;
+}
+.text-grey{
+	color: #828282;
 }
