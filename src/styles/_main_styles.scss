@@ -4,6 +4,7 @@
 }
 .card{
 	border-radius: 20px;
+	padding: 30px;
 }
 .dim-mobile{
 	width: 335px;
@@ -14,4 +15,29 @@
 }
 i.star:before{
 	content: url('../assets/images/star.svg');
+}
+i.icon-lg:before{
+	content: url('../assets/images/lg.svg');
+}
+i.wishlist:before{
+	content: url('../assets/images/wishlist.svg');
+}
+i.compare:before{
+	content: url('../assets/images/compare.svg');
+}
+i.stock-bar:before{
+	content: url('../assets/images/stock-bar.svg');
+}
+i.basket:before{
+	content: url('../assets/images/basket.svg');
+}
+img{
+	max-width: 100%;
+}
+.btn-buy{
+	background: linear-gradient(89deg, #E61577, #992478);
+	border-radius: 25px;
+	padding: 10px, 20px, 10px, 20px;
+	color: #fff;
+	font-size: 20px;
 }
