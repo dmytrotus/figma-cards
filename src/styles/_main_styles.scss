@@ -132,6 +132,12 @@ span.stock-bar{
     	background: $red;
 	}
 }
+span.stock-bar.red-line{
+	&:after{
+		width: 15%;
+    	background: $red;
+	}
+}
 ul.price-description-list{
 	max-width: 230px;
 	& > li > span{
@@ -212,4 +218,7 @@ ul.price-description-list{
 	    	right: 20px;
 		}
 	}
+}
+.card{
+	display: block;
 }
